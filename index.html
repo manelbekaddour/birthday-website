@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Forbidden Garden</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- LOCK SCREEN -->
+<main id="lockScreen" class="page center">
+  <div class="lock-wrapper">
+
+    <h1 class="main-title">THE FORBIDDEN GARDEN</h1>
+
+    <p class="intro-text">
+      Within these walls lie the echoes of a timeless bond.<br>
+      Only the one who holds the key to our first sunset<br>
+      may enter.
+    </p>
+
+    <div class="password-box">
+      <span class="password-label">ENTER PASSWORD</span>
+
+      <input
+        id="passwordInput"
+        type="password"
+        onkeydown="handleEnter(event)"
+      />
+
+      <p class="hint">
+        Hint: The day we started counting<br>
+        (DDMMYYYY)
+      </p>
+
+      <button onclick="checkPassword()">Unlock Memories</button>
+      <p id="error" class="error"></p>
+    </div>
+
+    <p class="signature-bottom">Created with love by Manel</p>
+  </div>
+</main>
+
+<!-- MAIN CONTENT -->
+<main id="mainContent" class="page hidden">
+
+  <h1 class="section-title">Our Forever</h1>
+
+  <div class="countdown-card">
+    <p class="countdown-title">TIME SINCE 31 MAY 2025</p>
+
+    <div class="time-boxes">
+      <div class="time-box">
+        <span id="days">0</span>
+        <small>DAYS</small>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <small>HOURS</small>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <small>MINS</small>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <small>SECS</small>
+      </div>
+    </div>
+
+    <p class="quote">
+      “Every heartbeat since that moment has been yours.”
+    </p>
+  </div>
+
+  <div class="message-card">
+    <h3 class="message-title">A Message for You</h3>
+
+    <p>
+        I know this gift might seem a little unusual, but I truly tried my best.
+
+        I started learning web development just to create something that would make you proud .
+         You know how shy I am, how hard it is for me to express my feelings. I can’t sing to you the way you sang to me on my birthday, and I’m not good at big gestures like that. 
+        I did think about buying you a gift, but I couldn’t decide. 
+      <br><br>
+      So about a month before your birthday, I started planning this. The idea of making you a website came to me, and I began learning, trying, and doing everything I could—simply as a way to express my love.
+      And of course, my love for you has no end.
+      <br><br>
+      I wanted to thank you in this message, because as you can see from the countdown, even if the time seems short, you changed me. You changed the way I think, helped me grow, and made me see life in a completely different color. I truly became a different person—and I’m not exaggerating at all. 
+
+I’m deeply in love with you.
+ I can’t, and I don’t want to, move away from you anymore.
+  I’ve grown used to your calls, your voice, and your presence in my life. 
+  In short… you became a part of me.
+
+
+
+My shyness held me back even while writing this, as you can probably tell.
+ I’m not good at expressing myself—but on your birthday, I truly wish you all the happiness and success in the world.
+ And I hope that one day, I’ll be right there next to you, celebrating it with you.
+ <br><br>
+I love you.
+<br><br>
+Yours,
+<br>
+Manel 
+    </p>
+  </div>
+
+  <p class="created-signature">CREATED WITH LOVE BY MANEL</p>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

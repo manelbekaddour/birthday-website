@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "RoyalWedding";
+    src: local("Royal Wedding"), local("MOHRIA");
+  }
+  
+  @font-face {
+    font-family: "PlumroseSignature";
+    src: local("Plumrose Signature");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    color: #f5eaea;
+    background:
+      radial-gradient(circle at center, #5c0f18 0%, #2a060a 70%, #120204 100%);
+  }
+  
+  /* COMMON */
+  .page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* LOCK */
+  .lock-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+  }
+  
+  .main-title {
+    font-family: "RoyalWedding", serif;
+    font-size: 48px;
+    letter-spacing: 4px;
+    color: #8b1d24;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .intro-text {
+    font-size: 14px;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .password-box {
+    width: 360px;
+    padding: 26px;
+    border-radius: 14px;
+    background: rgba(0,0,0,0.35);
+    box-shadow: 0 0 0 1px #8b1d24;
+    text-align: center;
+  }
+  
+  .password-label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #f2c1c1;
+    text-align: center;
+  }
+  
+  .password-box input {
+    width: 100%;
+    padding: 14px;
+    background: #0e0b10;
+    border: 2px solid #8b1d24;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .hint {
+    font-size: 11px;
+    margin: 14px 0;
+    opacity: 0.75;
+    text-align: center;
+  }
+  
+  .password-box button {
+    width: 100%;
+    padding: 14px;
+    background: #8b1d24;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .signature-bottom {
+    margin-top: 40px;
+    font-family: "PlumroseSignature", cursive;
+    font-size: 12px;
+    opacity: 0.9;
+  }
+  
+  /* MAIN */
+  .section-title {
+    font-family: "RoyalWedding", serif;
+    font-size: 44px;
+    color: #8b1d24;
+    margin-bottom: 30px;
+  }
+  
+  .countdown-card {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.3);
+  }
+  
+  .countdown-title {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+  }
+  
+  .time-boxes {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+  }
+  
+  .time-box {
+    background: rgba(0,0,0,0.45);
+    padding: 20px 26px;
+    border-radius: 14px;
+  }
+  
+  .time-box span {
+    font-family: "RoyalWedding", serif;
+    font-size: 32px;
+    color: #f2c1c1;
+  }
+  
+  .time-box small {
+    display: block;
+    margin-top: 8px;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  
+  .quote {
+    margin-top: 30px;
+    font-style: italic;
+    opacity: 0.85;
+  }
+  
+  .message-card {
+    margin-top: 60px;
+    max-width: 820px;
+    padding: 40px 40px 34px; 
+    border-radius: 20px;
+    background: rgba(0,0,0,0.28);
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  .message-card::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    margin: 28px auto 0;
+    background: linear-gradient(
+      to right,
+      transparent,
+      #8b1d24,
+      transparent
+    );
+    opacity: 0.8;
+  }
+  
+  
+  .message-title {
+    font-family: "RoyalWedding", serif;
+    font-size: 26px;
+    color: #8b1d24;
+    margin-bottom: 20px;
+  }
+  
+  .message-card p {
+    line-height: 1.9;
+    font-size: 15px;
+  }
+  
+  .error {
+    margin-top: 10px;
+    font-family: "PlumroseSignature", cursive;
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    color: #f2b6b6;
+    opacity: 0.85;
+    text-align: center;
+  }
+
+  .created-signature {
+    margin-top: 26px;
+    font-family: "RoyalWedding", serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #8b1d24;
+    text-align: center;
+    opacity: 0.9;
+  }
+  
